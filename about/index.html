@@ -10,6 +10,9 @@
         <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
         <link rel="manifest" href="img/site.webmanifest">
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYZUCOf1PHeky4ojZkN5B8z5T6JiNzwvc&callback=initMap"
+            type="text/javascript"></script>
     </head>
     <body>
         <div class="container">
@@ -48,6 +51,21 @@
                     Blanditiis suscipit, maiores illum consectetur voluptatibus necessitatibus at inventore explicabo dolore est quasi veritatis ducimus cumque dicta magnam? Consectetur minima doloribus voluptas officiis accusantium quia cum natus voluptates facere eos.
                     Architecto molestias laboriosam odit harum autem nobis commodi ipsum perspiciatis quasi. Rem aperiam impedit fugit quae sint quo quod nisi omnis, mollitia suscipit! Ea molestiae reprehenderit voluptas odio possimus explicabo?
                     Perspiciatis praesentium eaque, a veniam libero aperiam porro illo, quam vel officia commodi ad consectetur ipsa explicabo necessitatibus neque deserunt! Fugit rerum illo similique maxime doloremque, sunt sapiente a atque?</p>
+                </div>
+                <div id="map">
+                    <script>
+                        function initMap() {
+                            let grandcircus = { lat: 42.335960, lng: -83.049750 };
+                            let map = new google.maps.Map(document.getElementById('map'), {
+                                zoom: 6,
+                                center: grandcircus,
+                            });
+                            let marker = new google.maps.Marker({
+                                position: grandcircus,
+                                map: map,
+                            });
+                        }
+                    </script>
                 </div>
             </section>
 
