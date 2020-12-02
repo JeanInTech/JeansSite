@@ -1,88 +1,124 @@
 <!doctype html>
-    <head>
-        <title>Jean Thomas | Developer</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <link rel="stylesheet" href="../css/main.css">
-        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans&display=swap" rel="stylesheet">
+<head>
+    <title>Jean Thomas | Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-        <link rel="manifest" href="img/site.webmanifest">
-        <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYZUCOf1PHeky4ojZkN5B8z5T6JiNzwvc&callback=initMap"
-            type="text/javascript"></script>
-    </head>
-    <body>
-        <div class="container">
-            <header id="header-content">
-                <h1><span>Jean</span> in Tech</h1>
-                <nav>
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYZUCOf1PHeky4ojZkN5B8z5T6JiNzwvc&callback=initMap"
+        type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header id="header-content">
+            <h1><span>Jean</span> in Tech</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="index.html">About</a>
+                    </li>
+                    <li>
+                        <a href="../work/index.html">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="/files/Jean_Thomas_Resume.pdf" target="blank">Resume</a>
+                    </li>
+                    <li>
+                        <a href="mailto:jeniferjeanthomas@gmail.com">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="top-section">
+            <div class="main-title">
+                <h3>Behind the code</h3>
+                <p>Hi, I’m Jean: a recipient of the NCWIT Digital Initiatives scholarship, who will be graduating Grand
+                    Circus’ C# .NET
+                    Fulltime Bootcamp in December 2020.</p>
+
+                <p>For most, 2020 has been a tumultuous year. Despite the obstacles this year has presented, I’ve also
+                    seen a lot of
+                    opportunity for personal growth. It’s given me the space to reflect my career goals, and ultimately
+                    led me the decision
+                    to pursue a more fulfilling career as a developer. Technology has always been a passion of mine.
+                    Being raised from a
+                    time when the absence of technology led to the abundance of it, I was naturally curious and wanted
+                    to explore it.</p>
+                <p>One of my earliest memories was learning how to use a computer and my first experiments involved
+                    making my own webpage, which
+                    involved plugging some code into a GeoCities website and seeing the immediate result. It was
+                    rudimentary HTML, anime
+                    pictures taken from a google search and a generous dose of pixelated sparkles. An eyesore by today’s
+                    standards, but back
+                    then, I was proud of making it.</p>
+
+                <p>Now, as an adult, I’m driven by this lifelong passion and I’m working toward a career as a full-stack
+                    developer.
+                    Although my background is tied strongly to social media and the automotive industry, my expertise
+                    around customer
+                    experience, relationship building, and staying on top of social/cultural trends are invaluable
+                    skills that will carry
+                    over to the next chapter of my career.</p>
+
+                <p>While I am currently attending bootcamp, I am teaching myself HTML/CSS and JavaScript in my downtime
+                    by developing an
+                    online portfolio website to showcase my work. All updates can be found <a
+                        href="https://github.com/JeanInTech/web-portfolio">here</a>. Also, feel free to
+                    reach out using any of
+                    the links that I've provided above.
+                </p>
+            </div>
+            <div id="map">
+                <script>
+                    function initMap() {
+                        let grandcircus = { lat: 42.335960, lng: -83.049750 };
+                        let map = new google.maps.Map(document.getElementById('map'), {
+                            zoom: 6,
+                            center: grandcircus,
+                        });
+                        let marker = new google.maps.Marker({
+                            position: grandcircus,
+                            map: map,
+                        });
+                    }
+                </script>
+            </div>
+        </section>
+
+        <footer>
+            <div id="footer-content">
+                <div class="social-media">
                     <ul>
                         <li>
-                            <a href="../index.html">Home</a>
+                            <a href="https://github.com/JeanInTech" target="_blank"><img src="../img/github-icon.png"
+                                    alt="github icon"></a>
                         </li>
                         <li>
-                            <a href="index.html">About</a>
+                            <a href="https://www.linkedin.com/in/jeanintech/"" target=" _blank"><img
+                                    src="../img/linkedin-icon.png" alt="linkedin icon"></a>
                         </li>
                         <li>
-                            <a href="../work/index.html">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="/files/Jean_Thomas_Resume.pdf" target="blank">Resume</a>
-                        </li>
-                        <li>
-                            <a href="mailto:jeniferjeanthomas@gmail.com">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-            <section class="top-section">
-                <div class="main-title">
-                    <h3>Behind the code</h3>
-                    <p>Hi, I’m Jean: a recipient of the NCWIT Digital Initiatives scholarship, who will be graduating Grand Circus’ C# .NET Fulltime Bootcamp in December 2020.</p>
-
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum incidunt, itaque, nisi sed iste perferendis expedita blanditiis libero excepturi natus reiciendis rerum debitis dolorem, cupiditate quo ipsum neque voluptas ipsa?
-                    Adipisci maiores praesentium nobis accusamus molestiae. Distinctio modi iusto nam quod amet cupiditate debitis repellat molestiae, expedita dolor dolores quae necessitatibus in libero natus delectus iure fugiat iste tenetur! Delectus?</p>
-
-                    <p>Quas veniam exercitationem assumenda nulla excepturi quod fuga omnis, delectus vitae, quam eius! Totam maxime quo magni voluptatum veniam nobis quis eligendi sequi corporis, deserunt hic officiis esse minima provident!
-                    Vitae quos incidunt consequuntur quae quasi distinctio eum repellat harum quibusdam? Culpa soluta aliquam quidem ratione natus. Libero nobis, aut itaque ullam incidunt modi? Architecto quod inventore nihil ab deleniti.
-                    Blanditiis suscipit, maiores illum consectetur voluptatibus necessitatibus at inventore explicabo dolore est quasi veritatis ducimus cumque dicta magnam? Consectetur minima doloribus voluptas officiis accusantium quia cum natus voluptates facere eos.
-                    Architecto molestias laboriosam odit harum autem nobis commodi ipsum perspiciatis quasi. Rem aperiam impedit fugit quae sint quo quod nisi omnis, mollitia suscipit! Ea molestiae reprehenderit voluptas odio possimus explicabo?
-                    Perspiciatis praesentium eaque, a veniam libero aperiam porro illo, quam vel officia commodi ad consectetur ipsa explicabo necessitatibus neque deserunt! Fugit rerum illo similique maxime doloremque, sunt sapiente a atque?</p>
-                </div>
-                <div id="map">
-                    <script>
-                        function initMap() {
-                            let grandcircus = { lat: 42.335960, lng: -83.049750 };
-                            let map = new google.maps.Map(document.getElementById('map'), {
-                                zoom: 6,
-                                center: grandcircus,
-                            });
-                            let marker = new google.maps.Marker({
-                                position: grandcircus,
-                                map: map,
-                            });
-                        }
-                    </script>
-                </div>
-            </section>
-
-            <footer>
-                <div id="footer-content">
-                    <div class="social-media">
-                        <ul>
-                        <li>
-                            <a href="https://github.com/JeanInTech" target="_blank"><img src="../img/github-icon.png" alt="github icon"></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/jeanintech/"" target="_blank"><img src="../img/linkedin-icon.png" alt="linkedin icon"></a>
+                            <a href="https://twitter.com/JeanInTech"" target=" _blank"><img
+                                    src="../img/twitter-icon.png" alt="twitter icon"></a>
                         </li>
                     </ul>
                 </div>
-                <div class="copyright"><h4>2020 © Jean Thomas</h4></div>
-            </footer>
-        </div>
-    </body>
+                <div class="copyright">
+                    <h4>2020 © Jean Thomas</h4>
+                </div>
+        </footer>
+    </div>
+</body>
+
 </html>

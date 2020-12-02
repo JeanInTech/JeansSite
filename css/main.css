@@ -155,11 +155,15 @@ footer span {
   text-align: center;
 }
 
+/********* Tablet *********/
+
 @media (min-width: 768px) {
   p {
     padding: 0 30px;
   }
 }
+
+/********* Desktop *********/
 
 @media (min-width: 1200px) {
   #header-content {
